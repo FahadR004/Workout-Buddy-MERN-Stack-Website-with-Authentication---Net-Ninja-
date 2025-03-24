@@ -1,0 +1,16 @@
+Create backend and frontend folders.
+npm i express, dotenv, nodemon, mongoose
+
+
+middleware is any software that runs between sending a request on the server and us sending a response back. 
+
+mongoose is an odm or object data modeling library. Wraps mongodb with an extra layer that allows us to read/write in the database documents. Gives us a way to declare models and schemas to ensure a more strict database.
+
+
+We create a controllers folder and file because our routes file is for registering routes and we don't want to bloat it with database logic.
+
+We need some way to let the frontend know that the user is signed in and authenticated.
+JSON Web Tokens is one way to manage authentication between frontend and backend.
+
+#13
+We're having an issue where if we refresh, the react component thinks that we're logged out despite us having the token in the local Storage. So, we need to set the global state according to the presence of a token in the local storage.
